@@ -1,0 +1,273 @@
+
+🎨 Complete Figma AI Prompt — Roshni & Deepak Wedding Website
+
+🖼️ DESIGN BRIEF
+Design a complete, luxurious Indian wedding website for Roshni Pandey & Deepak Tripathi in Figma. The aesthetic is Royal Indian Romance — rich crimson red (#8B0000), deep gold (#C9A84C), ivory (#FDF6E3), and champagne white. Typography: Cormorant Garamond (headings), Lato (body). The entire website should feel like a royal Mughal-era invitation brought to life digitally — opulent, warm, celebratory, and deeply personal.
+
+📐 FRAME SETUP
+
+Desktop frame: 1440 × 900px (auto height)
+Mobile frame: 375 × 812px
+Create both simultaneously. Use Auto Layout throughout.
+Sticky navbar: height 70px, glassmorphism style with rgba(139,0,0,0.85) blur
+
+
+🔴 SECTION 1 — HERO / WELCOME (Full Screen, 100vh)
+Layout: Split-screen or full bleed with overlay
+Left side (60%):
+
+Background: Deep crimson red with a Mughal-arch frame (gold SVG arch shape overlay)
+Inside the arch: Couple photo placeholder — oval portrait frame with thick gold ornamental border (jeweled corners, paisley motifs). Label: "Add your photo with groom here" — size 480×600px centered in arch
+Gold petal particle animation floating upward (CSS keyframes)
+
+Right side (40%):
+
+Ivory/cream background with subtle mandala watermark (opacity 8%)
+Gold decorative divider line (top)
+Tag in small caps gold: "WEDDING INVITATION"
+Couple names in Cormorant Garamond Bold 72px: "Roshni Pandey" — decorative ampersand "&" in script gold 90px — "Deepak Tripathi"
+Below: Red decorative lotus divider SVG
+Date text: "We're Getting Married" in italic serif 22px
+"20 April 2025" in gold, letter-spaced, 36px bold
+Venue teaser: "Sanskar Marriage Garden, Satna" in 16px Lato gray
+CTA buttons row: [View Our Story] red filled + [See Events] gold outlined
+Floating WhatsApp button (bottom-right fixed): Green #25D366, circular 60px, WhatsApp icon, label "Share Invite", pre-filled URL: https://wa.me/?text=You're+invited+to+Roshni+%26+Deepak's+Wedding!+🎊+Check+details+here:+[website-link]
+
+Background full-width: Soft bokeh gold circles at 5% opacity as texture layer
+
+💌 SECTION 2 — DIGITAL INVITATION CARD
+Title: "Our Digital Invitation" — centered, Cormorant 48px, gold
+Subtitle: "Save & Share with your loved ones"
+Card Design (800×500px centered card):
+
+Background: Deep red #8B0000 with a gold filigree border (4px solid + 12px decorative SVG outer frame with corner florals)
+Top center: Gold Ganesh ji silhouette icon (auspicious symbol)
+Decorative floral garland divider beneath
+Text hierarchy:
+
+"शुभ विवाह" (Shubh Vivah) in Devanagari gold — 28px
+"Roshni Pandey weds Deepak Tripathi" — Cormorant 42px italic gold
+Decorative lotus separator
+"Sunday, 20th April 2025" — 22px white with gold underline
+"Sanskar Marriage Garden, Satna, Madhya Pradesh" — 16px champagne
+"Hosted by: Pandey & Tripathi Families" — 14px light
+
+
+Bottom buttons row:
+
+[⬇ Download Invitation] — Gold filled pill button
+[📲 Share via WhatsApp] — Green filled pill button
+
+
+
+
+⏱️ SECTION 3 — COUNTDOWN TIMER
+Background: Full-width deep maroon #5C0000 with a mandala watermark SVG centered at 10% opacity
+Title: "The Big Day Is Almost Here!" — Cormorant Garamond 52px ivory
+Subtitle: "20 April 2025 — Satna, MP"
+Timer Boxes (4 boxes in a row):
+
+Each box: 160×160px, rounded corners 12px
+Border: 3px solid gold with golden glow (box-shadow)
+Background: rgba(255,255,255,0.05) glassmorphism
+Number: 00 in Cormorant 72px bold gold
+Label: DAYS / HOURS / MINUTES / SECONDS in Lato 13px letter-spaced ivory
+Decorative gold corner brackets on each box
+
+Bottom: "We can't wait to celebrate with you 🎊" — italic ivory 18px
+
+💑 SECTION 4 — OUR STORY
+Background: Ivory #FDF6E3 with scattered watercolor rose petals at 15% opacity edges
+Title: "Our Love Story" — Cormorant 56px red
+Subtitle: "From strangers to soulmates"
+Layout: 2-column
+
+Left: Vertical timeline with 4 milestone cards:
+
+🌸 "First Meeting" — placeholder story text 2–3 lines
+💌 "First Date" — placeholder
+💍 "The Proposal" — placeholder
+👨‍👩‍👧‍👦 "Families United" — placeholder
+Each card: white background, gold left border 4px, shadow, date in gold small caps, text in Lato 15px
+
+
+Right: Couple photo placeholder — 500×600px, soft rounded rectangle, gold ornate frame border, watercolor floral corner accents. Label: "Your photo here"
+
+
+📅 SECTION 5 — EVENTS & SCHEDULE
+Background: White with faint paisley pattern texture at 5% opacity
+Title: "Celebration Events" — Cormorant 52px red, centered
+Cards grid (3 columns × 2 rows = 6 cards):
+EventDateTime🌿 Mehendi18 Apr11:00 AM💛 Haldi19 Apr9:00 AM🎶 Sangeet19 Apr7:00 PM🐴 Baraat20 Apr12:00 PM💍 Wedding Ceremony20 Apr2:00 PM🥂 Reception20 Apr7:00 PM
+Each card:
+
+340×220px, white background
+Top: Gold icon (emoji-style SVG) + event name in Cormorant 26px red
+Divider: thin gold line
+Date & time in Lato 15px dark gray
+Venue: "Sanskar Marriage Garden, Satna" in Lato 13px gold
+Gold border 1px, hover: lift shadow + gold glow
+
+
+👗 SECTION 6 — DRESS CODE GUIDE
+Background: Blush pink #FFF0F0 with soft floral watercolor edges
+Title: "Dress to Celebrate" — Cormorant 52px red
+Subtitle: "Our dress code guide for guests"
+3 cards (horizontal row):
+
+Family Members — "Traditional Indian Formals" — color swatches: Red, Maroon, Gold, Green
+Close Friends — "Pastels & Fusion Wear" — color swatches: Lavender, Peach, Mint, Dusty Rose
+General Guests — "Smart Indian Casuals" — color swatches: Navy, Cream, Olive, Burgundy
+
+Each card:
+
+White background, gold border, floral header illustration
+Color swatches as 40px circles in a row
+Do's & Don'ts list (2 items each)
+Gold accent icon
+
+
+🏨 SECTION 7 — HOTELS & STAY NEARBY
+Title: "Where to Stay in Satna" — Cormorant 52px red
+Subtitle: "We've curated the best nearby stays for you"
+4 Hotel cards (2×2 grid):
+
+Hotel 1: "Hotel Chandela" — 2.5km — ₹1,500–₹3,000/night
+Hotel 2: "Hotel Clarks Inn" — 3km — ₹2,000–₹4,000/night
+Hotel 3: "OYO Satna" — 1.8km — ₹800–₹1,500/night
+Hotel 4: "Hotel Amar Palace" — 4km — ₹1,200–₹2,500/night
+
+Each card:
+
+Image placeholder (300×180px gray)
+Gold map pin icon + distance badge
+Price range in green badge
+Two CTA buttons: [Book Now →] red + [📍 Directions] outlined gold
+
+
+📸 SECTION 8 — PHOTO GALLERY
+Title: "Our Moments Together" — Cormorant 52px gold on dark red background
+Background: Dark maroon #5C0000
+Masonry grid: 3 columns, mixed heights — 9 photo placeholders with gold ornate frame borders
+Below grid:
+
+[📁 View All Photos on Google Drive] — large gold button
+Note in italic ivory: "All wedding photos will be uploaded here — accessible to all guests 💛"
+
+
+📤 SECTION 9 — GUEST PHOTO UPLOAD ⭐
+Background: Ivory with gold confetti sprinkle pattern
+Title: "Share Your Moments With Us 📸" — Cormorant 52px red
+Subtitle: "Upload your favorite memory from our special day!"
+Upload Box:
+
+700×280px dashed border box — gold #C9A84C 3px dashed
+Center icon: Camera SVG in gold
+Text: "Drag & Drop your photos here" — Cormorant 24px
+Subtext: "or click to browse — JPG, PNG, HEIC supported"
+Caption input field below: "Add a little message with your photo... 💬"
+[Upload & Share 💛] gold pill button
+
+Guest photo grid below:
+
+4-column live grid of uploaded photo thumbnails with gold borders
+Each shows caption below in italic Lato 13px
+
+
+🗺️ SECTION 10 — VENUE & MAP
+Background: White
+Title: "Find Us Here" — Cormorant 52px red
+Left side (50%):
+
+Gold decorative map pin SVG (large, 80px)
+"Sanskar Marriage Garden" — Cormorant 36px bold red
+"Satna, Madhya Pradesh — 485001" — Lato 18px gray
+Contact placeholder: "📞 +91 XXXXX XXXXX"
+[📍 Open in Google Maps] — red filled button
+[🚗 Get Directions] — gold outlined button
+
+Right side (50%):
+
+Google Maps <iframe> embed for Satna, MP (600×400px, rounded 16px, gold border)
+
+
+📝 SECTION 11 — RSVP FORM
+Background: Red #8B0000 with floral damask pattern at 10% opacity
+Title: "Will You Be There?" — Cormorant 56px gold
+Subtitle: "Let us know so we can celebrate together!"
+Form fields (white rounded inputs, gold focus border):
+
+Guest Full Name
+Phone Number
+Email Address
+Number of Guests (stepper)
+Events Attending (multi-select chips: Mehendi / Haldi / Sangeet / Baraat / Wedding / Reception)
+Dietary Preference (dropdown: Veg / Jain / No Preference)
+Message (optional textarea)
+
+Submit: [RSVP Now 💍] — full-width gold button with shimmer animation
+
+💬 SECTION 12 — WISHES WALL
+Background: Ivory with scattered gold sparkles
+Title: "Blessings & Wishes" — Cormorant 52px red
+Subtitle: "Leave your love for the couple"
+Wishes grid: 3-column masonry of message cards
+
+Each: white background, gold border 2px, soft shadow
+Quote marks in gold 48px at top-left
+Guest name in Cormorant 20px red
+Message in Lato 15px gray
+
+Bottom input:
+
+Name field + Wish textarea
+[Send Blessings 💐] gold button
+
+
+🔻 FOOTER
+Background: Deep maroon #3D0000
+Content:
+
+"Roshni ♥ Deepak" — Cormorant 42px gold centered
+"20 April 2025 · Sanskar Marriage Garden, Satna"
+Gold decorative divider
+Row of icons: WhatsApp share · Instagram placeholder · Facebook placeholder
+Copyright: "Made with ❤️ for our special day"
+
+
+📱 MOBILE (375px)
+
+Hamburger menu (gold lines on red) → slide-in drawer
+Hero: Single column — photo on top (full width), names below
+All grids → single column stacks
+Timer boxes → 2×2 grid
+Events → vertical scroll cards
+RSVP form → full-width inputs
+WhatsApp FAB always visible bottom-right
+
+
+✨ GLOBAL DESIGN TOKENS
+--red-primary: #8B0000
+--red-dark: #5C0000
+--red-deeper: #3D0000
+--gold-primary: #C9A84C
+--gold-light: #E8C97A
+--ivory: #FDF6E3
+--cream: #F5ECD7
+--font-heading: 'Cormorant Garamond', serif
+--font-body: 'Lato', sans-serif
+--border-radius-card: 16px
+--shadow-gold: 0 4px 24px rgba(201,168,76,0.25)
+
+🔁 INTERACTIONS TO DEFINE IN FIGMA
+
+Navbar links → smooth scroll anchors
+Countdown timer → prototype with number variants
+Photo upload → drag state + uploaded state
+RSVP form → empty → filled → success state
+WhatsApp button → hover scale + glow pulse animation
+Cards → default → hover (lift + gold glow) variants
+
+
+
+Important note for hero image: The hero section includes a prominent couple photo frame — an ornate Mughal-arch shaped portrait in the left panel. Replace the placeholder with your real photo with the groom before exporting. The frame is designed as an oval/arch with a thick jeweled gold border to make your photo the most striking visual element on the page.
