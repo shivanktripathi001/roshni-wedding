@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const COUPLE_IMG = "/M.jpg";
-const WA_URL = "https://wa.me/?text=You're+invited+to+Roshni+%26+Deepak's+Wedding!+🎊+Check+details+here:+[website-link]";
 
 function GoldPetal({ style }: { style: React.CSSProperties }) {
   return (
@@ -45,10 +44,7 @@ export function HeroSection() {
           0%, 100% { transform: translateY(0) scale(1); opacity: 0.04; }
           50% { transform: translateY(-30px) scale(1.1); opacity: 0.07; }
         }
-        @keyframes whatsappPulse {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
-          50% { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
-        }
+
       `}</style>
 
       {/* Bokeh texture */}
@@ -86,6 +82,20 @@ export function HeroSection() {
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-12 md:py-20">
         <div className="max-w-6xl w-full flex flex-col items-center gap-8">
           
+          {/* We're Getting Married - Top Heading */}
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl"
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              color: "#e94560",
+              fontWeight: 700,
+              letterSpacing: "0.05em",
+              marginBottom: "8px",
+            }}
+          >
+            We're Getting Married
+          </h1>
+
           {/* Top divider */}
           <div className="flex items-center gap-3 w-full max-w-md justify-center">
             <div className="h-px flex-1" style={{ background: "linear-gradient(to right, transparent, #e94560)" }} />
@@ -94,14 +104,6 @@ export function HeroSection() {
             </svg>
             <div className="h-px flex-1" style={{ background: "linear-gradient(to left, transparent, #e94560)" }} />
           </div>
-
-          {/* Tag */}
-          <span
-            className="text-xs tracking-widest uppercase"
-            style={{ fontFamily: "'Lato', sans-serif", color: "#e94560", letterSpacing: "0.3em" }}
-          >
-            Wedding Invitation
-          </span>
 
           {/* Names */}
           <div className="flex flex-col items-center gap-1 text-center">
@@ -171,12 +173,6 @@ export function HeroSection() {
 
           {/* Date info */}
           <p
-            className="italic text-base sm:text-lg md:text-xl"
-            style={{ fontFamily: "'Cormorant Garamond', serif", color: "#636e72" }}
-          >
-            We're Getting Married
-          </p>
-          <p
             className="text-2xl sm:text-3xl md:text-4xl"
             style={{
               fontFamily: "'Cormorant Garamond', serif",
@@ -227,44 +223,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* WhatsApp FAB */}
-      <a
-        href={WA_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col items-center gap-1 cursor-pointer"
-        style={{ textDecoration: "none" }}
-      >
-        <div
-          className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] rounded-full flex items-center justify-center transition-transform duration-200 hover:scale-110"
-          style={{
-            background: "#25D366",
-            animation: "whatsappPulse 2s ease-in-out infinite",
-          }}
-        >
-          <svg className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]" viewBox="0 0 28 28" fill="none">
-            <path
-              d="M14 2C7.373 2 2 7.373 2 14c0 2.15.56 4.17 1.54 5.92L2 26l4.24-1.51A11.94 11.94 0 0014 26c6.627 0 12-5.373 12-12S20.627 2 14 2z"
-              fill="white"
-            />
-            <path
-              d="M19.5 16.6c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.37.19 1.88.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.19-.57-.34z"
-              fill="#25D366"
-            />
-          </svg>
-        </div>
-        <span
-          className="px-2 py-0.5 rounded text-[9px] sm:text-xs hidden sm:block"
-          style={{
-            fontFamily: "'Lato', sans-serif",
-            background: "#25D366",
-            color: "white",
-            whiteSpace: "nowrap",
-          }}
-        >
-          Share Invite
-        </span>
-      </a>
+
     </section>
   );
 }

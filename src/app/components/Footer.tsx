@@ -1,5 +1,3 @@
-const WA_URL = "https://wa.me/?text=You're+invited+to+Roshni+%26+Deepak's+Wedding!+🎊+Check+details+here:+[website-link]";
-
 export function Footer() {
   return (
     <footer
@@ -35,24 +33,6 @@ export function Footer() {
 
       {/* Social icons row */}
       <div className="flex items-center gap-6">
-        {/* WhatsApp */}
-        <a
-          href={WA_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
-          style={{ background: "#25D366" }}
-          title="Share on WhatsApp"
-        >
-          <svg width="22" height="22" viewBox="0 0 28 28" fill="white">
-            <path d="M14 2C7.373 2 2 7.373 2 14c0 2.15.56 4.17 1.54 5.92L2 26l4.24-1.51A11.94 11.94 0 0014 26c6.627 0 12-5.373 12-12S20.627 2 14 2z" />
-            <path
-              d="M19.5 16.6c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.37.19 1.88.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.19-.57-.34z"
-              fill="#25D366"
-            />
-          </svg>
-        </a>
-
         {/* Instagram */}
         <a
           href="#"
