@@ -6,6 +6,7 @@ const events = [
     time: "7:00 PM onwards",
     color: "#ff6b88",
     description: "Join us for a day filled with colors, music, and joy",
+    venue: "Beside Ajay Bhawan Gali Mukhtyaar Ganj Satna",
   },
   {
     icon: "💍",
@@ -14,6 +15,7 @@ const events = [
     time: "7:00 PM onwards",
     color: "#e94560",
     description: "Witness our union and celebrate with us",
+    venue: "Sanskar Garden, Panna Road Pateri Chauraha, Pateri",
   },
 ];
 
@@ -135,7 +137,7 @@ export function EventsSection() {
                   letterSpacing: "0.05em",
                 }}
               >
-                📍 Sanskar Garden, Panna Road Pateri Chauraha, Pateri
+                📍 {ev.venue}
               </p>
             </div>
           ))}

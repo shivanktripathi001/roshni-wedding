@@ -101,18 +101,44 @@ export function InvitationCard() {
           </p>
 
           {/* Couple names */}
-          <h2
-            className="text-center italic"
-            style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              color: "#2d3436",
-              fontSize: "clamp(24px, 4vw, 40px)",
-              fontWeight: 600,
-              lineHeight: 1.3,
-            }}
-          >
-            Roshni Pandey weds Deepak Tripathi
-          </h2>
+          <div className="text-center">
+            <h2
+              className="italic"
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                color: "#2d3436",
+                fontSize: "clamp(32px, 6vw, 52px)",
+                fontWeight: 600,
+                lineHeight: 1.3,
+              }}
+            >
+              Roshni Pandey
+            </h2>
+            <p
+              className="italic"
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                color: "#e94560",
+                fontSize: "clamp(28px, 5vw, 44px)",
+                fontWeight: 500,
+                margin: "12px 0",
+              }}
+            >
+              weds
+            </p>
+            <h2
+              className="italic"
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                color: "#2d3436",
+                fontSize: "clamp(32px, 6vw, 52px)",
+                fontWeight: 600,
+                lineHeight: 1.3,
+              }}
+            >
+              Deepak Tripathi
+            </h2>
+          </div>
 
           {/* Lotus separator */}
           <svg width="120" height="20" viewBox="0 0 120 20">
@@ -135,7 +161,7 @@ export function InvitationCard() {
                 display: "inline-block",
               }}
             >
-              Sunday, 20th April 2026
+              Monday, 20th April 2026
             </p>
           </div>
 
@@ -162,26 +188,6 @@ export function InvitationCard() {
           >
             Hosted by: Pandey & Tripathi Families
           </p>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center mt-2">
-            <button
-              onClick={handleDownload}
-              className="px-8 py-3 transition-all duration-200 hover:scale-105 hover:brightness-110"
-              style={{
-                fontFamily: "'Lato', sans-serif",
-                background: "#e94560",
-                color: "#ffffff",
-                borderRadius: 999,
-                border: "none",
-                fontSize: "14px",
-                fontWeight: 700,
-                letterSpacing: "0.05em",
-              }}
-            >
-              ⬇ Download Invitation
-            </button>
-          </div>
         </div>
       </div>
     </section>

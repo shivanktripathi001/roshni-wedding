@@ -128,7 +128,7 @@ export function HeroSection() {
                 fontStyle: "italic",
               }}
             >
-              &
+              Weds
             </span>
             <h1
               style={{
@@ -144,13 +144,13 @@ export function HeroSection() {
           </div>
 
           {/* Photo - Positioned after names */}
-          <div className="relative flex items-center justify-center w-full max-w-[200px] sm:max-w-[240px] md:max-w-[280px] my-3">
+          <div className="relative flex items-center justify-center w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] my-4">
             <div
-              className="relative w-full rounded-2xl overflow-hidden shadow-2xl"
+              className="relative w-full rounded-3xl overflow-hidden"
               style={{
-                aspectRatio: "3/4",
-                border: "3px solid #e94560",
-                boxShadow: "0 15px 40px rgba(233,69,96,0.2)",
+                aspectRatio: "4/5",
+                border: "4px solid #e94560",
+                boxShadow: "0 20px 60px rgba(233,69,96,0.25), 0 0 0 8px rgba(233,69,96,0.1)",
               }}
             >
               <ImageWithFallback
@@ -158,6 +158,11 @@ export function HeroSection() {
                 alt="Roshni & Deepak"
                 className="w-full h-full object-cover object-center"
               />
+              {/* Decorative corner accents */}
+              <div className="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-white opacity-60" />
+              <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-white opacity-60" />
+              <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-white opacity-60" />
+              <div className="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-white opacity-60" />
             </div>
           </div>
 

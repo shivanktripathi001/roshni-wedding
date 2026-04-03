@@ -93,7 +93,7 @@ export function VenueMap() {
             {/* CTA buttons */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a
-                href="https://maps.google.com/?q=Sanskar+Garden+Panna+Road+Pateri+Chauraha+Pateri+Madhya+Pradesh+485001"
+                href="https://www.google.com/maps/place/Sanskar+Garden+Satna/@24.5765921,80.8006645,17z/data=!3m1!4b1!4m6!3m5!1s0x3983807deabeb717:0xa076209a4c85c5f0!8m2!3d24.5765921!4d80.8032394!16s%2Fg%2F11c6dxhh59?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-7 py-3 rounded-full text-sm transition-all duration-200 hover:scale-105"
@@ -108,24 +108,6 @@ export function VenueMap() {
                 }}
               >
                 📍 Open in Google Maps
-              </a>
-              <a
-                href="https://maps.google.com/?q=Sanskar+Garden+Panna+Road+Pateri+Chauraha+Pateri+Madhya+Pradesh+485001&dirflg=d"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-7 py-3 rounded-full text-sm transition-all duration-200 hover:scale-105"
-                style={{
-                  fontFamily: "'Lato', sans-serif",
-                  background: "transparent",
-                  color: "#e94560",
-                  border: "2px solid #e94560",
-                  fontWeight: 700,
-                  textDecoration: "none",
-                  display: "inline-block",
-                  letterSpacing: "0.05em",
-                }}
-              >
-                🚗 Get Directions
               </a>
             </div>
           </div>
