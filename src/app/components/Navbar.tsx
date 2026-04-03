@@ -32,11 +32,11 @@ export function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center justify-between px-6 md:px-12 transition-all duration-300"
         style={{
           background: scrolled
-            ? "rgba(139,0,0,0.92)"
-            : "rgba(139,0,0,0.75)",
+            ? "rgba(26,26,46,0.95)"
+            : "rgba(26,26,46,0.85)",
           backdropFilter: "blur(12px)",
           WebkitBackdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(201,168,76,0.3)",
+          borderBottom: "1px solid rgba(233,69,96,0.3)",
         }}
       >
         {/* Logo */}
@@ -44,7 +44,7 @@ export function Navbar() {
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => handleNav("#hero")}
         >
-          <span style={{ fontFamily: "'Cormorant Garamond', serif", color: "#C9A84C", fontSize: "22px", fontWeight: 700, letterSpacing: "0.05em" }}>
+          <span style={{ fontFamily: "'Cormorant Garamond', serif", color: "#e94560", fontSize: "22px", fontWeight: 700, letterSpacing: "0.05em" }}>
             Roshni ♥ Deepak
           </span>
         </div>
@@ -56,9 +56,9 @@ export function Navbar() {
               <button
                 onClick={() => handleNav(link.href)}
                 className="text-[13px] tracking-widest uppercase transition-colors duration-200"
-                style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", letterSpacing: "0.12em" }}
+                style={{ fontFamily: "'Lato', sans-serif", color: "#ff6b88", letterSpacing: "0.12em" }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#fff")}
-                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#E8C97A")}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#ff6b88")}
               >
                 {link.label}
               </button>
@@ -70,7 +70,7 @@ export function Navbar() {
         <button
           className="md:hidden p-2"
           onClick={() => setMenuOpen(!menuOpen)}
-          style={{ color: "#C9A84C" }}
+          style={{ color: "#e94560" }}
         >
           {menuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
@@ -86,16 +86,16 @@ export function Navbar() {
       >
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(61,0,0,0.7)" }}
+          style={{ background: "rgba(26,26,46,0.8)" }}
           onClick={() => setMenuOpen(false)}
         />
         <div
           className="absolute top-0 right-0 h-full w-[280px] flex flex-col pt-[90px] px-8 gap-6"
           style={{
-            background: "#3D0000",
+            background: "#16213e",
             transform: menuOpen ? "translateX(0)" : "translateX(100%)",
             transition: "transform 0.3s ease",
-            borderLeft: "1px solid rgba(201,168,76,0.3)",
+            borderLeft: "1px solid rgba(233,69,96,0.3)",
           }}
         >
           {navLinks.map((link) => (
@@ -105,8 +105,8 @@ export function Navbar() {
               className="text-left py-2 text-base tracking-widest uppercase border-b"
               style={{
                 fontFamily: "'Lato', sans-serif",
-                color: "#E8C97A",
-                borderColor: "rgba(201,168,76,0.2)",
+                color: "#ff6b88",
+                borderColor: "rgba(233,69,96,0.2)",
               }}
             >
               {link.label}

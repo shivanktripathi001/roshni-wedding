@@ -1,16 +1,12 @@
 import { useState, useEffect } from "react";
 
-// Wedding date: April 20, 2025 at 2:00 PM
-const WEDDING_DATE = new Date(2025, 3, 20, 14, 0, 0); // Month is 0-indexed, so 3 = April
+// Wedding date: April 20, 2026 at 7:00 PM IST
+const WEDDING_DATE = new Date("2026-04-20T19:00:00+05:30");
 
 function getTimeLeft() {
   const now = new Date().getTime();
   const weddingTime = WEDDING_DATE.getTime();
   const diff = weddingTime - now;
-  
-  console.log('Current time:', new Date());
-  console.log('Wedding time:', WEDDING_DATE);
-  console.log('Difference (ms):', diff);
   
   if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0, passed: true };
   
@@ -18,8 +14,6 @@ function getTimeLeft() {
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
   const seconds = Math.floor((diff / 1000) % 60);
-  
-  console.log('Countdown:', { days, hours, minutes, seconds });
   
   return {
     days,
@@ -30,89 +24,52 @@ function getTimeLeft() {
   };
 }
 
-function TimerBox({ value, label }: { value: number; label: string }) {
-  return (
-    <div
-      className="flex flex-col items-center justify-center relative"
-      style={{
-        width: "clamp(110px, 18vw, 160px)",
-        height: "clamp(110px, 18vw, 160px)",
-        borderRadius: 12,
-        border: "3px solid #C9A84C",
-        background: "rgba(255,255,255,0.05)",
-        backdropFilter: "blur(8px)",
-        boxShadow: "0 0 20px rgba(201,168,76,0.25), inset 0 0 20px rgba(201,168,76,0.05)",
-      }}
-    >
-      {/* Corner brackets */}
-      {[
-        "top-1 left-1",
-        "top-1 right-1 rotate-90",
-        "bottom-1 left-1 -rotate-90",
-        "bottom-1 right-1 rotate-180",
-      ].map((pos, i) => (
-        <svg
-          key={i}
-          className={`absolute ${pos}`}
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-        >
-          <path d="M2,12 L2,2 L12,2" fill="none" stroke="#C9A84C" strokeWidth="2" />
-        </svg>
-      ))}
-
-      <span
-        style={{
-          fontFamily: "'Cormorant Garamond', serif",
-          color: "#C9A84C",
-          fontSize: "clamp(40px, 7vw, 64px)",
-          fontWeight: 700,
-          lineHeight: 1,
-        }}
-      >
-        {String(value).padStart(2, "0")}
-      </span>
-      <span
-        style={{
-          fontFamily: "'Lato', sans-serif",
-          color: "#FDF6E3",
-          fontSize: "11px",
-          letterSpacing: "0.2em",
-          marginTop: 4,
-        }}
-      >
-        {label}
-      </span>
-    </div>
-  );
-}
-
 export function CountdownTimer() {
-  const [time, setTime] = useState(getTimeLeft());
+  const [time, setTime] = useState(() => getTimeLeft());
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const id = setInterval(() => setTime(getTimeLeft()), 1000);
+    setMounted(true);
+    setTime(getTimeLeft());
+    
+    const id = setInterval(() => {
+      setTime(getTimeLeft());
+    }, 1000);
+    
     return () => clearInterval(id);
   }, []);
+
+  if (!mounted) {
+    return (
+      <section
+        id="countdown"
+        className="relative py-20 px-4 overflow-hidden"
+        style={{ background: "#f8f9fa" }}
+      >
+        <div className="relative z-10 flex flex-col items-center gap-8 text-center">
+          <div>Loading...</div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
       id="countdown"
       className="relative py-20 px-4 overflow-hidden"
-      style={{ background: "#5C0000" }}
+      style={{ background: "#f8f9fa" }}
     >
       {/* Mandala watermark */}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none"
         viewBox="0 0 800 400"
-        style={{ opacity: 0.08 }}
+        style={{ opacity: 0.03 }}
         preserveAspectRatio="xMidYMid meet"
       >
-        <circle cx="400" cy="200" r="180" fill="none" stroke="#C9A84C" strokeWidth="2" />
-        <circle cx="400" cy="200" r="130" fill="none" stroke="#C9A84C" strokeWidth="2" />
-        <circle cx="400" cy="200" r="80" fill="none" stroke="#C9A84C" strokeWidth="1.5" />
-        <circle cx="400" cy="200" r="40" fill="none" stroke="#C9A84C" strokeWidth="1" />
+        <circle cx="400" cy="200" r="180" fill="none" stroke="#e94560" strokeWidth="2" />
+        <circle cx="400" cy="200" r="130" fill="none" stroke="#e94560" strokeWidth="2" />
+        <circle cx="400" cy="200" r="80" fill="none" stroke="#e94560" strokeWidth="1.5" />
+        <circle cx="400" cy="200" r="40" fill="none" stroke="#e94560" strokeWidth="1" />
         {[...Array(16)].map((_, i) => {
           const angle = (i * 22.5 * Math.PI) / 180;
           return (
@@ -122,7 +79,7 @@ export function CountdownTimer() {
               y1={200 + 40 * Math.sin(angle)}
               x2={400 + 180 * Math.cos(angle)}
               y2={200 + 180 * Math.sin(angle)}
-              stroke="#C9A84C"
+              stroke="#e94560"
               strokeWidth="1"
             />
           );
@@ -134,30 +91,196 @@ export function CountdownTimer() {
           <h2
             style={{
               fontFamily: "'Cormorant Garamond', serif",
-              color: "#FDF6E3",
+              color: "#2d3436",
               fontSize: "clamp(32px, 5vw, 52px)",
               fontWeight: 600,
             }}
           >
             {time.passed ? "The Big Day Has Arrived! 🎊" : "The Big Day Is Almost Here!"}
           </h2>
-          <p style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "15px", marginTop: 6 }}>
-            20 April 2025 — Satna, MP
+          <p style={{ fontFamily: "'Lato', sans-serif", color: "#e94560", fontSize: "15px", marginTop: 6 }}>
+            20 April 2026 — Pateri, MP
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-5">
-          <TimerBox value={time.days} label="DAYS" />
-          <TimerBox value={time.hours} label="HOURS" />
-          <TimerBox value={time.minutes} label="MINUTES" />
-          <TimerBox value={time.seconds} label="SECONDS" />
+        {/* Single Timer Box */}
+        <div
+          className="relative px-8 sm:px-12 py-8 sm:py-10 rounded-2xl"
+          style={{
+            border: "3px solid #e94560",
+            background: "#ffffff",
+            boxShadow: "0 8px 32px rgba(233,69,96,0.15)",
+            maxWidth: "600px",
+            width: "100%",
+          }}
+        >
+          {/* Corner brackets */}
+          {[
+            "top-2 left-2",
+            "top-2 right-2 rotate-90",
+            "bottom-2 left-2 -rotate-90",
+            "bottom-2 right-2 rotate-180",
+          ].map((pos, i) => (
+            <svg
+              key={i}
+              className={`absolute ${pos}`}
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path d="M2,14 L2,2 L14,2" fill="none" stroke="#e94560" strokeWidth="2" />
+            </svg>
+          ))}
+
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+            {/* Days */}
+            <div className="flex flex-col items-center">
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  color: "#e94560",
+                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontWeight: 700,
+                  lineHeight: 1,
+                }}
+              >
+                {String(time.days).padStart(2, "0")}
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Lato', sans-serif",
+                  color: "#636e72",
+                  fontSize: "11px",
+                  letterSpacing: "0.2em",
+                  marginTop: 4,
+                  textTransform: "uppercase",
+                }}
+              >
+                Days
+              </span>
+            </div>
+
+            <span
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                color: "#e94560",
+                fontSize: "clamp(32px, 6vw, 48px)",
+                fontWeight: 300,
+              }}
+            >
+              :
+            </span>
+
+            {/* Hours */}
+            <div className="flex flex-col items-center">
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  color: "#e94560",
+                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontWeight: 700,
+                  lineHeight: 1,
+                }}
+              >
+                {String(time.hours).padStart(2, "0")}
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Lato', sans-serif",
+                  color: "#636e72",
+                  fontSize: "11px",
+                  letterSpacing: "0.2em",
+                  marginTop: 4,
+                  textTransform: "uppercase",
+                }}
+              >
+                Hours
+              </span>
+            </div>
+
+            <span
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                color: "#e94560",
+                fontSize: "clamp(32px, 6vw, 48px)",
+                fontWeight: 300,
+              }}
+            >
+              :
+            </span>
+
+            {/* Minutes */}
+            <div className="flex flex-col items-center">
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  color: "#e94560",
+                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontWeight: 700,
+                  lineHeight: 1,
+                }}
+              >
+                {String(time.minutes).padStart(2, "0")}
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Lato', sans-serif",
+                  color: "#636e72",
+                  fontSize: "11px",
+                  letterSpacing: "0.2em",
+                  marginTop: 4,
+                  textTransform: "uppercase",
+                }}
+              >
+                Minutes
+              </span>
+            </div>
+
+            <span
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                color: "#e94560",
+                fontSize: "clamp(32px, 6vw, 48px)",
+                fontWeight: 300,
+              }}
+            >
+              :
+            </span>
+
+            {/* Seconds */}
+            <div className="flex flex-col items-center">
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  color: "#e94560",
+                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontWeight: 700,
+                  lineHeight: 1,
+                }}
+              >
+                {String(time.seconds).padStart(2, "0")}
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Lato', sans-serif",
+                  color: "#636e72",
+                  fontSize: "11px",
+                  letterSpacing: "0.2em",
+                  marginTop: 4,
+                  textTransform: "uppercase",
+                }}
+              >
+                Seconds
+              </span>
+            </div>
+          </div>
         </div>
 
         <p
           className="italic"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
-            color: "#FDF6E3",
+            color: "#636e72",
             fontSize: "18px",
             opacity: 0.9,
           }}

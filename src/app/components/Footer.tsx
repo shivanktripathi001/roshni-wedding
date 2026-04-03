@@ -4,13 +4,13 @@ export function Footer() {
   return (
     <footer
       className="py-14 px-4 flex flex-col items-center gap-6 text-center"
-      style={{ background: "#3D0000" }}
+      style={{ background: "#2d3436" }}
     >
       {/* Main title */}
       <h2
         style={{
           fontFamily: "'Cormorant Garamond', serif",
-          color: "#C9A84C",
+          color: "#e94560",
           fontSize: "clamp(28px, 5vw, 42px)",
           fontWeight: 700,
           letterSpacing: "0.05em",
@@ -20,17 +20,17 @@ export function Footer() {
       </h2>
 
       {/* Date & venue */}
-      <p style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "14px", letterSpacing: "0.1em" }}>
-        20 April 2025 · Sanskar Marriage Garden, Satna
+      <p style={{ fontFamily: "'Lato', sans-serif", color: "#ff6b88", fontSize: "14px", letterSpacing: "0.1em" }}>
+        20 April 2026 · Sanskar Garden, Pateri
       </p>
 
-      {/* Gold divider */}
+      {/* Divider */}
       <div className="flex items-center gap-4 w-full max-w-sm justify-center">
-        <div className="h-px flex-1" style={{ background: "#C9A84C", opacity: 0.4 }} />
+        <div className="h-px flex-1" style={{ background: "#e94560", opacity: 0.3 }} />
         <svg width="16" height="16" viewBox="0 0 16 16">
-          <polygon points="8,1 10,6 15,6 11,9 13,14 8,11 3,14 5,9 1,6 6,6" fill="#C9A84C" opacity="0.7" />
+          <polygon points="8,1 10,6 15,6 11,9 13,14 8,11 3,14 5,9 1,6 6,6" fill="#e94560" opacity="0.7" />
         </svg>
-        <div className="h-px flex-1" style={{ background: "#C9A84C", opacity: 0.4 }} />
+        <div className="h-px flex-1" style={{ background: "#e94560", opacity: 0.3 }} />
       </div>
 
       {/* Social icons row */}
@@ -81,8 +81,8 @@ export function Footer() {
       </div>
 
       {/* Copyright */}
-      <p style={{ fontFamily: "'Lato', sans-serif", color: "rgba(253,246,227,0.4)", fontSize: "12px", letterSpacing: "0.05em" }}>
-        Made with ❤️ for our special day · © 2025 Roshni & Deepak
+      <p style={{ fontFamily: "'Lato', sans-serif", color: "rgba(255,255,255,0.3)", fontSize: "12px", letterSpacing: "0.05em" }}>
+        Made with ❤️ for our special day · © 2026 Roshni & Deepak
       </p>
     </footer>
   );

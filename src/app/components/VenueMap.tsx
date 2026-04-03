@@ -3,7 +3,7 @@ export function VenueMap() {
     <section
       id="venue"
       className="py-20 px-4"
-      style={{ background: "#fff" }}
+      style={{ background: "#f8f9fa" }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Title */}
@@ -11,7 +11,7 @@ export function VenueMap() {
           <h2
             style={{
               fontFamily: "'Cormorant Garamond', serif",
-              color: "#8B0000",
+              color: "#2d3436",
               fontSize: "clamp(32px, 5vw, 52px)",
               fontWeight: 700,
             }}
@@ -19,9 +19,9 @@ export function VenueMap() {
             Find Us Here
           </h2>
           <div className="flex items-center justify-center gap-3 mt-3">
-            <div className="h-px w-16" style={{ background: "#C9A84C" }} />
-            <span style={{ color: "#C9A84C", fontSize: "20px" }}>📍</span>
-            <div className="h-px w-16" style={{ background: "#C9A84C" }} />
+            <div className="h-px w-16" style={{ background: "#e94560" }} />
+            <span style={{ color: "#e94560", fontSize: "20px" }}>📍</span>
+            <div className="h-px w-16" style={{ background: "#e94560" }} />
           </div>
         </div>
 
@@ -33,16 +33,16 @@ export function VenueMap() {
               <svg width="72" height="90" viewBox="0 0 72 90">
                 <defs>
                   <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#E8C97A" />
-                    <stop offset="100%" stopColor="#C9A84C" />
+                    <stop offset="0%" stopColor="#ff6b88" />
+                    <stop offset="100%" stopColor="#e94560" />
                   </linearGradient>
                 </defs>
                 <path
                   d="M36,4 C18,4 4,18 4,36 C4,58 36,86 36,86 C36,86 68,58 68,36 C68,18 54,4 36,4 Z"
                   fill="url(#pinGrad)"
                 />
-                <circle cx="36" cy="36" r="14" fill="#8B0000" />
-                <circle cx="36" cy="36" r="7" fill="#FDF6E3" />
+                <circle cx="36" cy="36" r="14" fill="#2d3436" />
+                <circle cx="36" cy="36" r="7" fill="#ffffff" />
               </svg>
             </div>
 
@@ -50,7 +50,7 @@ export function VenueMap() {
               <h3
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  color: "#8B0000",
+                  color: "#2d3436",
                   fontSize: "clamp(24px, 4vw, 36px)",
                   fontWeight: 700,
                 }}
@@ -60,7 +60,7 @@ export function VenueMap() {
               <p
                 style={{
                   fontFamily: "'Lato', sans-serif",
-                  color: "#666",
+                  color: "#636e72",
                   fontSize: "16px",
                   marginTop: 6,
                 }}
@@ -72,19 +72,19 @@ export function VenueMap() {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <span style={{ fontSize: "18px" }}>📅</span>
-                <span style={{ fontFamily: "'Lato', sans-serif", color: "#555", fontSize: "15px" }}>
-                  Sunday, 20th April 2025 · 2:00 PM onwards
+                <span style={{ fontFamily: "'Lato', sans-serif", color: "#2d3436", fontSize: "15px" }}>
+                  Sunday, 20th April 2026 · 7:00 PM onwards
                 </span>
               </div>
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <span style={{ fontSize: "18px" }}>📞</span>
-                <span style={{ fontFamily: "'Lato', sans-serif", color: "#555", fontSize: "15px" }}>
-                  +91 XXXXX XXXXX
+                <span style={{ fontFamily: "'Lato', sans-serif", color: "#2d3436", fontSize: "15px" }}>
+                  +91 9993823979
                 </span>
               </div>
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <span style={{ fontSize: "18px" }}>✉️</span>
-                <span style={{ fontFamily: "'Lato', sans-serif", color: "#555", fontSize: "15px" }}>
+                <span style={{ fontFamily: "'Lato', sans-serif", color: "#2d3436", fontSize: "15px" }}>
                   roshni.deepak2025@gmail.com
                 </span>
               </div>
@@ -99,8 +99,8 @@ export function VenueMap() {
                 className="px-7 py-3 rounded-full text-sm transition-all duration-200 hover:scale-105"
                 style={{
                   fontFamily: "'Lato', sans-serif",
-                  background: "#8B0000",
-                  color: "#FDF6E3",
+                  background: "#e94560",
+                  color: "#ffffff",
                   fontWeight: 700,
                   textDecoration: "none",
                   display: "inline-block",
@@ -117,8 +117,8 @@ export function VenueMap() {
                 style={{
                   fontFamily: "'Lato', sans-serif",
                   background: "transparent",
-                  color: "#C9A84C",
-                  border: "2px solid #C9A84C",
+                  color: "#e94560",
+                  border: "2px solid #e94560",
                   fontWeight: 700,
                   textDecoration: "none",
                   display: "inline-block",
@@ -134,8 +134,8 @@ export function VenueMap() {
           <div
             className="rounded-2xl overflow-hidden"
             style={{
-              border: "3px solid #C9A84C",
-              boxShadow: "0 4px 32px rgba(201,168,76,0.2)",
+              border: "3px solid #e94560",
+              boxShadow: "0 4px 32px rgba(233,69,96,0.15)",
               height: 400,
             }}
           >
