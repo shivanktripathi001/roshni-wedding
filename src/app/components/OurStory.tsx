@@ -6,19 +6,19 @@ const milestones = [
   {
     icon: "🌸",
     title: "First Meeting",
-    date: "March 2020",
+    date: "6th December 2026",
     text: "Fate brought us together at a mutual friend's gathering in Satna. One look, one smile — and something quietly changed forever. Neither of us knew that evening would mark the beginning of forever.",
   },
   {
     icon: "💍",
     title: "Engagement",
-    date: "January 2024",
+    date: "24th March 2026",
     text: "Under a canopy of fairy lights, surrounded by marigolds and roses, Deepak got down on one knee. With tears of joy and a trembling 'Yes,' our forever officially began.",
   },
   {
     icon: "👨👩👧👦",
     title: "Families United",
-    date: "March 2024",
+    date: "20th April 2026",
     text: "Two families, one joyful union. The Pandeys and the Tripathis came together with open hearts and warm embraces, welcoming a new chapter filled with love, blessings, and togetherness.",
   },
 ];
