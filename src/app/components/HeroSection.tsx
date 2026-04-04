@@ -83,18 +83,30 @@ export function HeroSection() {
         <div className="max-w-6xl w-full flex flex-col items-center gap-8">
           
           {/* We're Getting Married - Top Heading */}
-          <h1
-            className="text-2xl sm:text-3xl md:text-4xl"
-            style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              color: "#e94560",
-              fontWeight: 700,
-              letterSpacing: "0.05em",
-              marginBottom: "8px",
-            }}
-          >
-            We're Getting Married
-          </h1>
+          <div className="flex flex-col items-center gap-2">
+            <h1
+              className="text-2xl sm:text-3xl md:text-4xl"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                color: "#e94560",
+                fontWeight: 700,
+                letterSpacing: "0.05em",
+              }}
+            >
+              We're Getting Married
+            </h1>
+            <p
+              className="text-lg sm:text-xl md:text-2xl"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                color: "#2d3436",
+                fontWeight: 600,
+                letterSpacing: "0.05em",
+              }}
+            >
+              
+            </p>
+          </div>
 
           {/* Top divider */}
           <div className="flex items-center gap-3 w-full max-w-md justify-center">
@@ -180,7 +192,7 @@ export function HeroSection() {
           <p
             className="text-2xl sm:text-3xl md:text-4xl"
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#e94560",
               fontWeight: 700,
               letterSpacing: "0.1em",
@@ -188,8 +200,8 @@ export function HeroSection() {
           >
             20 April 2026
           </p>
-          <p className="text-sm sm:text-base text-center max-w-md" style={{ fontFamily: "'Lato', sans-serif", color: "#636e72" }}>
-            Sanskar Garden, Panna Road Pateri Chauraha, Pateri
+          <p className="text-sm sm:text-base text-center max-w-md" style={{ fontFamily: "'Inter', sans-serif", color: "#636e72" }}>
+            Sanskar Marriage Garden, Panna Road Pateri Chauraha, Satna
           </p>
 
           {/* CTA Buttons */}
@@ -198,7 +210,7 @@ export function HeroSection() {
               onClick={() => document.querySelector("#story")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-3 text-sm tracking-wider transition-all duration-200 hover:scale-105 w-full sm:w-auto"
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 background: "#e94560",
                 color: "#ffffff",
                 borderRadius: 999,
@@ -213,7 +225,7 @@ export function HeroSection() {
               onClick={() => document.querySelector("#events")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-3 text-sm tracking-wider transition-all duration-200 hover:scale-105 w-full sm:w-auto"
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 background: "transparent",
                 color: "#e94560",
                 borderRadius: 999,

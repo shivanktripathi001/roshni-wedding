@@ -24,7 +24,7 @@ export function WishesWall() {
   };
 
   const inputStyle: React.CSSProperties = {
-    fontFamily: "'Lato', sans-serif",
+    fontFamily: "'Inter', sans-serif",
     fontSize: "14px",
     color: "#2d3436",
     background: "#fff",
@@ -69,7 +69,7 @@ export function WishesWall() {
         <div className="text-center mb-12">
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#2d3436",
               fontSize: "clamp(32px, 5vw, 52px)",
               fontWeight: 700,
@@ -77,7 +77,7 @@ export function WishesWall() {
           >
             Blessings & Wishes
           </h2>
-          <p style={{ fontFamily: "'Lato', sans-serif", color: "#636e72", fontSize: "15px", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", color: "#636e72", fontSize: "15px", marginTop: 6 }}>
             Leave your love for the couple
           </p>
           <div className="flex items-center justify-center gap-3 mt-3">
@@ -98,7 +98,7 @@ export function WishesWall() {
         >
           <h3
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#2d3436",
               fontSize: "26px",
               fontWeight: 700,
@@ -130,7 +130,7 @@ export function WishesWall() {
               disabled={!name.trim() || !message.trim()}
               className="px-10 py-3 rounded-full text-sm tracking-wider transition-all duration-200 hover:scale-105"
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 background:
                   name.trim() && message.trim() ? "#e94560" : "#ddd",
                 color: name.trim() && message.trim() ? "#ffffff" : "#999",

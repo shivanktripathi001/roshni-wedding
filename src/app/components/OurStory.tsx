@@ -49,14 +49,14 @@ export function OurStory() {
         <h2
           className="text-4xl sm:text-5xl md:text-[56px]"
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Poppins', sans-serif",
             color: "#2d3436",
             fontWeight: 700,
           }}
         >
           Our Love Story
         </h2>
-        <p className="text-sm sm:text-base mt-2" style={{ fontFamily: "'Lato', sans-serif", color: "#636e72" }}>
+        <p className="text-sm sm:text-base mt-2" style={{ fontFamily: "'Inter', sans-serif", color: "#636e72" }}>
           From strangers to soulmates
         </p>
       </div>
@@ -96,7 +96,7 @@ export function OurStory() {
                 <span
                   className="text-[10px] sm:text-[11px]"
                   style={{
-                    fontFamily: "'Lato', sans-serif",
+                    fontFamily: "'Inter', sans-serif",
                     color: "#e94560",
                     letterSpacing: "0.2em",
                     textTransform: "uppercase",
@@ -108,14 +108,14 @@ export function OurStory() {
                 <h3
                   className="text-lg sm:text-xl md:text-[22px] mt-1 sm:mt-2 mb-2 sm:mb-3"
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "'Poppins', sans-serif",
                     color: "#2d3436",
                     fontWeight: 700,
                   }}
                 >
                   {m.title}
                 </h3>
-                <p className="text-xs sm:text-sm leading-relaxed" style={{ fontFamily: "'Lato', sans-serif", color: "#636e72" }}>
+                <p className="text-xs sm:text-sm leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", color: "#636e72" }}>
                   {m.text}
                 </p>
               </div>

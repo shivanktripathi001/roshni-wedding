@@ -43,7 +43,7 @@ export function RSVPForm() {
   };
 
   const inputStyle: React.CSSProperties = {
-    fontFamily: "'Lato', sans-serif",
+    fontFamily: "'Inter', sans-serif",
     fontSize: "14px",
     color: "#333",
     background: "#fff",
@@ -87,7 +87,7 @@ export function RSVPForm() {
         <div className="text-center mb-10">
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#C9A84C",
               fontSize: "clamp(36px, 6vw, 56px)",
               fontWeight: 700,
@@ -95,7 +95,7 @@ export function RSVPForm() {
           >
             Will You Be There?
           </h2>
-          <p style={{ fontFamily: "'Lato', sans-serif", color: "rgba(253,246,227,0.8)", fontSize: "15px", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(253,246,227,0.8)", fontSize: "15px", marginTop: 6 }}>
             Let us know so we can celebrate together!
           </p>
         </div>
@@ -108,7 +108,7 @@ export function RSVPForm() {
             <div className="text-6xl">🎊</div>
             <h3
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#C9A84C",
                 fontSize: "36px",
                 fontWeight: 700,
@@ -116,14 +116,14 @@ export function RSVPForm() {
             >
               Thank You, {form.name || "Dear Guest"}!
             </h3>
-            <p style={{ fontFamily: "'Lato', sans-serif", color: "#FDF6E3", fontSize: "16px" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", color: "#FDF6E3", fontSize: "16px" }}>
               Your RSVP has been received. We're so excited to celebrate with you! 💛
             </p>
             <button
               onClick={() => setSubmitted(false)}
               className="mt-4 px-8 py-3 rounded-full text-sm"
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 background: "#C9A84C",
                 color: "#3D0000",
                 border: "none",
@@ -145,7 +145,7 @@ export function RSVPForm() {
           >
             {/* Name */}
             <div>
-              <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
+              <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
                 GUEST FULL NAME *
               </label>
               <input
@@ -162,7 +162,7 @@ export function RSVPForm() {
             {/* Phone + Email */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
+                <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
                   PHONE NUMBER *
                 </label>
                 <input
@@ -176,7 +176,7 @@ export function RSVPForm() {
                 />
               </div>
               <div>
-                <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
+                <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
                   EMAIL ADDRESS
                 </label>
                 <input
@@ -193,7 +193,7 @@ export function RSVPForm() {
 
             {/* Number of Guests (stepper) */}
             <div>
-              <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
+              <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
                 NUMBER OF GUESTS *
               </label>
               <div className="flex items-center gap-4">
@@ -205,7 +205,7 @@ export function RSVPForm() {
                 >
                   −
                 </button>
-                <span style={{ fontFamily: "'Cormorant Garamond', serif", color: "#fff", fontSize: "28px", fontWeight: 700, minWidth: 40, textAlign: "center" }}>
+                <span style={{ fontFamily: "'Poppins', sans-serif", color: "#fff", fontSize: "28px", fontWeight: 700, minWidth: 40, textAlign: "center" }}>
                   {form.guests}
                 </span>
                 <button
@@ -216,7 +216,7 @@ export function RSVPForm() {
                 >
                   +
                 </button>
-                <span style={{ fontFamily: "'Lato', sans-serif", color: "rgba(253,246,227,0.6)", fontSize: "13px" }}>
+                <span style={{ fontFamily: "'Inter', sans-serif", color: "rgba(253,246,227,0.6)", fontSize: "13px" }}>
                   person{form.guests !== 1 ? "s" : ""}
                 </span>
               </div>
@@ -224,7 +224,7 @@ export function RSVPForm() {
 
             {/* Events attending */}
             <div>
-              <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 8 }}>
+              <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 8 }}>
                 EVENTS ATTENDING
               </label>
               <div className="flex flex-wrap gap-3">
@@ -237,7 +237,7 @@ export function RSVPForm() {
                       onClick={() => toggleEvent(ev)}
                       className="px-4 py-2 rounded-full text-sm transition-all duration-200"
                       style={{
-                        fontFamily: "'Lato', sans-serif",
+                        fontFamily: "'Inter', sans-serif",
                         background: selected ? "#C9A84C" : "rgba(255,255,255,0.1)",
                         color: selected ? "#3D0000" : "#FDF6E3",
                         border: `1.5px solid ${selected ? "#C9A84C" : "rgba(201,168,76,0.4)"}`,
@@ -253,7 +253,7 @@ export function RSVPForm() {
 
             {/* Dietary */}
             <div>
-              <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
+              <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
                 DIETARY PREFERENCE
               </label>
               <select
@@ -272,7 +272,7 @@ export function RSVPForm() {
 
             {/* Message */}
             <div>
-              <label style={{ fontFamily: "'Lato', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
+              <label style={{ fontFamily: "'Inter', sans-serif", color: "#E8C97A", fontSize: "12px", letterSpacing: "0.15em", display: "block", marginBottom: 6 }}>
                 MESSAGE (OPTIONAL)
               </label>
               <textarea
@@ -291,7 +291,7 @@ export function RSVPForm() {
               type="submit"
               className={`w-full py-4 rounded-full text-base tracking-wider transition-all duration-200 hover:scale-[1.02] ${shimmer ? "shimmer-btn" : ""}`}
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 background: shimmer ? undefined : "#C9A84C",
                 color: "#3D0000",
                 border: "none",

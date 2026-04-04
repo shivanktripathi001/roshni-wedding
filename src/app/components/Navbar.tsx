@@ -41,22 +41,22 @@ export function Navbar() {
       >
         {/* Logo */}
         <div
-          className="flex items-center gap-2 cursor-pointer"
+          className="cursor-pointer"
           onClick={() => handleNav("#hero")}
         >
-          <span style={{ fontFamily: "'Cormorant Garamond', serif", color: "#e94560", fontSize: "22px", fontWeight: 700, letterSpacing: "0.05em" }}>
+          <span style={{ fontFamily: "'Poppins', sans-serif", color: "#e94560", fontSize: "22px", fontWeight: 700, letterSpacing: "0.05em" }}>
             Roshni ♥ Deepak
           </span>
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-7">
+        <ul className="hidden md:flex items-center gap-7 absolute right-12">
           {navLinks.map((link) => (
             <li key={link.href}>
               <button
                 onClick={() => handleNav(link.href)}
                 className="text-[13px] tracking-widest uppercase transition-colors duration-200"
-                style={{ fontFamily: "'Lato', sans-serif", color: "#ff6b88", letterSpacing: "0.12em" }}
+                style={{ fontFamily: "'Inter', sans-serif", color: "#ff6b88", letterSpacing: "0.12em" }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#fff")}
                 onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#ff6b88")}
               >
@@ -68,7 +68,7 @@ export function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 absolute right-6"
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ color: "#e94560" }}
         >
@@ -104,7 +104,7 @@ export function Navbar() {
               onClick={() => handleNav(link.href)}
               className="text-left py-2 text-base tracking-widest uppercase border-b"
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "'Inter', sans-serif",
                 color: "#ff6b88",
                 borderColor: "rgba(233,69,96,0.2)",
               }}

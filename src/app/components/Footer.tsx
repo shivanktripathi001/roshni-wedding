@@ -7,7 +7,7 @@ export function Footer() {
       {/* Main title */}
       <h2
         style={{
-          fontFamily: "'Cormorant Garamond', serif",
+          fontFamily: "'Poppins', sans-serif",
           color: "#e94560",
           fontSize: "clamp(28px, 5vw, 42px)",
           fontWeight: 700,
@@ -18,8 +18,8 @@ export function Footer() {
       </h2>
 
       {/* Date & venue */}
-      <p style={{ fontFamily: "'Lato', sans-serif", color: "#ff6b88", fontSize: "14px", letterSpacing: "0.1em" }}>
-        20 April 2026 · Sanskar Garden, Pateri
+      <p style={{ fontFamily: "'Inter', sans-serif", color: "#ff6b88", fontSize: "14px", letterSpacing: "0.1em" }}>
+        20 April 2026 · Sanskar Marriage Garden, Satna
       </p>
 
       {/* Divider */}
@@ -61,7 +61,7 @@ export function Footer() {
       </div>
 
       {/* Copyright */}
-      <p style={{ fontFamily: "'Lato', sans-serif", color: "rgba(255,255,255,0.3)", fontSize: "12px", letterSpacing: "0.05em" }}>
+      <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(255,255,255,0.3)", fontSize: "12px", letterSpacing: "0.05em" }}>
         Made with ❤️ for our special day · © 2026 Roshni & Deepak
       </p>
     </footer>

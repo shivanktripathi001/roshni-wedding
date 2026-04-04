@@ -15,7 +15,7 @@ const events = [
     time: "7:00 PM onwards",
     color: "#e94560",
     description: "Witness our union and celebrate with us",
-    venue: "Sanskar Garden, Panna Road Pateri Chauraha, Pateri",
+    venue: "Sanskar Marriage Garden, Panna Road Pateri Chauraha, Satna",
   },
 ];
 
@@ -40,7 +40,7 @@ export function EventsSection() {
         <div className="text-center mb-12">
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#2d3436",
               fontSize: "clamp(32px, 5vw, 52px)",
               fontWeight: 700,
@@ -88,7 +88,7 @@ export function EventsSection() {
                 <h3
                   className="text-xl sm:text-2xl"
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "'Poppins', sans-serif",
                     color: "#2d3436",
                     fontWeight: 700,
                   }}
@@ -99,9 +99,9 @@ export function EventsSection() {
 
               {/* Description */}
               <p
-                className="text-sm italic"
+                className="text-sm"
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Inter', sans-serif",
                   color: "#636e72",
                 }}
               >
@@ -115,13 +115,13 @@ export function EventsSection() {
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
                   <span style={{ color: "#e94560", fontSize: "14px" }}>📅</span>
-                  <span style={{ fontFamily: "'Lato', sans-serif", color: "#2d3436", fontSize: "14px" }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", color: "#2d3436", fontSize: "14px" }}>
                     {ev.date}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span style={{ color: "#e94560", fontSize: "14px" }}>🕐</span>
-                  <span style={{ fontFamily: "'Lato', sans-serif", color: "#2d3436", fontSize: "14px" }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", color: "#2d3436", fontSize: "14px" }}>
                     {ev.time}
                   </span>
                 </div>
@@ -130,7 +130,7 @@ export function EventsSection() {
               {/* Venue */}
               <p
                 style={{
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   color: "#e94560",
                   fontSize: "12px",
                   fontWeight: 700,

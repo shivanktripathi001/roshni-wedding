@@ -41,7 +41,7 @@ export function DressCode() {
         <div className="text-center mb-12">
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#8B0000",
               fontSize: "clamp(32px, 5vw, 52px)",
               fontWeight: 700,
@@ -49,7 +49,7 @@ export function DressCode() {
           >
             Dress to Celebrate
           </h2>
-          <p style={{ fontFamily: "'Lato', sans-serif", color: "#888", fontSize: "15px", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", color: "#888", fontSize: "15px", marginTop: 6 }}>
             Our dress code guide for guests
           </p>
           <div className="flex items-center justify-center gap-3 mt-3">
@@ -82,7 +82,7 @@ export function DressCode() {
                 <div className="text-4xl">{cat.icon}</div>
                 <h3
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "'Poppins', sans-serif",
                     color: "#8B0000",
                     fontSize: "24px",
                     fontWeight: 700,
@@ -93,7 +93,7 @@ export function DressCode() {
                 </h3>
                 <p
                   style={{
-                    fontFamily: "'Lato', sans-serif",
+                    fontFamily: "'Inter', sans-serif",
                     color: "#C9A84C",
                     fontSize: "13px",
                     fontWeight: 700,
@@ -110,7 +110,7 @@ export function DressCode() {
                 <div>
                   <p
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "'Inter', sans-serif",
                       color: "#888",
                       fontSize: "11px",
                       letterSpacing: "0.15em",
@@ -133,7 +133,7 @@ export function DressCode() {
                             boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                           }}
                         />
-                        <span style={{ fontFamily: "'Lato', sans-serif", fontSize: "10px", color: "#888" }}>
+                        <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "10px", color: "#888" }}>
                           {cat.swatchLabels[j]}
                         </span>
                       </div>
@@ -145,7 +145,7 @@ export function DressCode() {
                 <div>
                   <p
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "'Inter', sans-serif",
                       color: "#2E7D32",
                       fontSize: "11px",
                       letterSpacing: "0.15em",
@@ -160,7 +160,7 @@ export function DressCode() {
                     <p
                       key={j}
                       style={{
-                        fontFamily: "'Lato', sans-serif",
+                        fontFamily: "'Inter', sans-serif",
                         color: "#444",
                         fontSize: "13px",
                         lineHeight: 1.6,
@@ -175,7 +175,7 @@ export function DressCode() {
                 <div>
                   <p
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "'Inter', sans-serif",
                       color: "#C0392B",
                       fontSize: "11px",
                       letterSpacing: "0.15em",
@@ -190,7 +190,7 @@ export function DressCode() {
                     <p
                       key={j}
                       style={{
-                        fontFamily: "'Lato', sans-serif",
+                        fontFamily: "'Inter', sans-serif",
                         color: "#444",
                         fontSize: "13px",
                         lineHeight: 1.6,

@@ -13,7 +13,7 @@ export function InvitationCard() {
       <div className="text-center mb-12">
         <h2
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Poppins', sans-serif",
             color: "#e94560",
             fontSize: "clamp(32px, 5vw, 48px)",
             fontWeight: 700,
@@ -23,7 +23,7 @@ export function InvitationCard() {
         </h2>
         <p
           style={{
-            fontFamily: "'Lato', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             color: "#636e72",
             fontSize: "15px",
             marginTop: 6,
@@ -73,7 +73,7 @@ export function InvitationCard() {
                 🕉
               </text>
             </svg>
-            <span style={{ fontFamily: "'Lato', sans-serif", color: "#ff6b88", fontSize: "11px", letterSpacing: "0.2em" }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", color: "#ff6b88", fontSize: "11px", letterSpacing: "0.2em" }}>
               शुभम् करोति
             </span>
           </div>
@@ -90,7 +90,7 @@ export function InvitationCard() {
           {/* शुभ विवाह */}
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#e94560",
               fontSize: "26px",
               fontWeight: 600,
@@ -103,9 +103,8 @@ export function InvitationCard() {
           {/* Couple names */}
           <div className="text-center">
             <h2
-              className="italic"
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#2d3436",
                 fontSize: "clamp(32px, 6vw, 52px)",
                 fontWeight: 600,
@@ -115,9 +114,8 @@ export function InvitationCard() {
               Roshni Pandey
             </h2>
             <p
-              className="italic"
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
                 fontSize: "clamp(28px, 5vw, 44px)",
                 fontWeight: 500,
@@ -127,9 +125,8 @@ export function InvitationCard() {
               weds
             </p>
             <h2
-              className="italic"
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#2d3436",
                 fontSize: "clamp(32px, 6vw, 52px)",
                 fontWeight: 600,
@@ -152,7 +149,7 @@ export function InvitationCard() {
           <div className="text-center">
             <p
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#2d3436",
                 fontSize: "20px",
                 fontWeight: 500,
@@ -168,7 +165,7 @@ export function InvitationCard() {
           {/* Venue */}
           <p
             style={{
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               color: "#636e72",
               fontSize: "15px",
               textAlign: "center",
@@ -180,7 +177,7 @@ export function InvitationCard() {
           {/* Hosted by */}
           <p
             style={{
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               color: "#b2bec3",
               fontSize: "13px",
               textAlign: "center",

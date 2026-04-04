@@ -90,7 +90,7 @@ export function CountdownTimer() {
         <div>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#2d3436",
               fontSize: "clamp(32px, 5vw, 52px)",
               fontWeight: 600,
@@ -98,7 +98,7 @@ export function CountdownTimer() {
           >
             {time.passed ? "The Big Day Has Arrived! 🎊" : "The Big Day Is Almost Here!"}
           </h2>
-          <p style={{ fontFamily: "'Lato', sans-serif", color: "#e94560", fontSize: "15px", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", color: "#e94560", fontSize: "15px", marginTop: 6 }}>
             20 April 2026 — Pateri, MP
           </p>
         </div>
@@ -132,12 +132,12 @@ export function CountdownTimer() {
             </svg>
           ))}
 
-          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+          <div className="flex justify-center items-center gap-4 sm:gap-6">
             {/* Days */}
             <div className="flex flex-col items-center">
               <span
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
                   fontSize: "clamp(40px, 8vw, 56px)",
                   fontWeight: 700,
@@ -148,7 +148,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -162,7 +162,7 @@ export function CountdownTimer() {
 
             <span
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
                 fontSize: "clamp(32px, 6vw, 48px)",
                 fontWeight: 300,
@@ -175,7 +175,7 @@ export function CountdownTimer() {
             <div className="flex flex-col items-center">
               <span
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
                   fontSize: "clamp(40px, 8vw, 56px)",
                   fontWeight: 700,
@@ -186,7 +186,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -200,7 +200,7 @@ export function CountdownTimer() {
 
             <span
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
                 fontSize: "clamp(32px, 6vw, 48px)",
                 fontWeight: 300,
@@ -213,7 +213,7 @@ export function CountdownTimer() {
             <div className="flex flex-col items-center">
               <span
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
                   fontSize: "clamp(40px, 8vw, 56px)",
                   fontWeight: 700,
@@ -224,7 +224,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -238,7 +238,7 @@ export function CountdownTimer() {
 
             <span
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
                 fontSize: "clamp(32px, 6vw, 48px)",
                 fontWeight: 300,
@@ -251,7 +251,7 @@ export function CountdownTimer() {
             <div className="flex flex-col items-center">
               <span
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
                   fontSize: "clamp(40px, 8vw, 56px)",
                   fontWeight: 700,
@@ -262,7 +262,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -277,9 +277,8 @@ export function CountdownTimer() {
         </div>
 
         <p
-          className="italic"
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Inter', sans-serif",
             color: "#636e72",
             fontSize: "18px",
             opacity: 0.9,

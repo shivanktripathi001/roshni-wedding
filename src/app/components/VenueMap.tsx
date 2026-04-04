@@ -16,7 +16,7 @@ export function VenueMap() {
               fontWeight: 700,
             }}
           >
-            Find Us Here
+            Venue & Location
           </h2>
           <div className="flex items-center justify-center gap-3 mt-3">
             <div className="h-px w-16" style={{ background: "#e94560" }} />
@@ -55,7 +55,7 @@ export function VenueMap() {
                   fontWeight: 700,
                 }}
               >
-                Sanskar Garden
+                Sanskar Marriage Garden
               </h3>
               <p
                 style={{
@@ -65,7 +65,7 @@ export function VenueMap() {
                   marginTop: 6,
                 }}
               >
-                Panna Road Pateri Chauraha, Pateri, Madhya Pradesh 485001
+                Panna Road Pateri Chauraha, Satna
               </p>
             </div>
 
@@ -93,7 +93,7 @@ export function VenueMap() {
             {/* CTA buttons */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a
-                href="https://www.google.com/maps/place/Sanskar+Garden+Satna/@24.5765921,80.8006645,17z/data=!3m1!4b1!4m6!3m5!1s0x3983807deabeb717:0xa076209a4c85c5f0!8m2!3d24.5765921!4d80.8032394!16s%2Fg%2F11c6dxhh59?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                href="https://maps.app.goo.gl/1BrgBWXW6ZiJ6wMB8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-7 py-3 rounded-full text-sm transition-all duration-200 hover:scale-105"
