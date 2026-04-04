@@ -171,7 +171,7 @@ export function InvitationCard() {
               textAlign: "center",
             }}
           >
-            Sanskar Garden, Panna Road Pateri Chauraha, Pateri, Madhya Pradesh 485001
+            Sanskar Garden, Panna Road Pateri Chauraha, Satna, Madhya Pradesh 485001
           </p>
 
           {/* Hosted by */}
