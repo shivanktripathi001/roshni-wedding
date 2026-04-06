@@ -102,13 +102,7 @@ export function CountdownTimer() {
       </svg>
 
       <div className="relative z-10 flex flex-col items-center gap-6 sm:gap-8 text-center px-4">
-        <div
-          style={{
-            opacity: isVisible ? 1 : 0.3,
-            transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
-            transition: 'all 0.8s ease-out',
-          }}
-        >
+        <div>
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
@@ -133,10 +127,6 @@ export function CountdownTimer() {
             boxShadow: "0 6px 24px rgba(233,69,96,0.15)",
             maxWidth: "600px",
             width: "100%",
-            opacity: isVisible ? 1 : 0.3,
-            transform: isVisible ? 'scale(1)' : 'scale(0.98)',
-            transition: 'all 0.8s ease-out 0.2s',
-            animation: 'pulse 3s ease-in-out infinite',
           }}
         >
           {/* Corner brackets */}
@@ -306,9 +296,6 @@ export function CountdownTimer() {
             fontFamily: "'Poppins', sans-serif",
             color: "#636e72",
             fontSize: "clamp(14px, 3.5vw, 18px)",
-            opacity: isVisible ? 0.9 : 0.3,
-            transform: isVisible ? 'translateY(0)' : 'translateY(15px)',
-            transition: 'all 0.8s ease-out 0.4s',
             lineHeight: '1.6',
           }}
         >
