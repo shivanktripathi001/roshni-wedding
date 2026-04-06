@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 // Wedding date: April 20, 2026 at 7:00 PM IST
 const WEDDING_DATE = new Date("2026-04-20T19:00:00+05:30");
@@ -27,6 +28,7 @@ function getTimeLeft() {
 export function CountdownTimer() {
   const [time, setTime] = useState(() => getTimeLeft());
   const [mounted, setMounted] = useState(false);
+  const { ref, isVisible } = useScrollAnimation(0.2);
 
   useEffect(() => {
     setMounted(true);
@@ -56,6 +58,7 @@ export function CountdownTimer() {
   return (
     <section
       id="countdown"
+      ref={ref}
       className="relative py-20 px-4 overflow-hidden"
       style={{ background: "#f8f9fa" }}
     >
@@ -87,18 +90,24 @@ export function CountdownTimer() {
       </svg>
 
       <div className="relative z-10 flex flex-col items-center gap-8 text-center">
-        <div>
+        <div
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+            transition: 'all 0.8s ease-out',
+          }}
+        >
           <h2
             style={{
-              fontFamily: "'Poppins', sans-serif",
+              fontFamily: "'Playfair Display', serif",
               color: "#2d3436",
               fontSize: "clamp(32px, 5vw, 52px)",
-              fontWeight: 600,
+              fontWeight: 700,
             }}
           >
             {time.passed ? "The Big Day Has Arrived! 🎊" : "The Big Day Is Almost Here!"}
           </h2>
-          <p style={{ fontFamily: "'Inter', sans-serif", color: "#e94560", fontSize: "15px", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Poppins', sans-serif", color: "#e94560", fontSize: "15px", marginTop: 6 }}>
             20 April 2026 — Pateri, MP
           </p>
         </div>
@@ -112,6 +121,10 @@ export function CountdownTimer() {
             boxShadow: "0 8px 32px rgba(233,69,96,0.15)",
             maxWidth: "600px",
             width: "100%",
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'scale(1)' : 'scale(0.95)',
+            transition: 'all 0.8s ease-out 0.2s',
+            animation: 'pulse 3s ease-in-out infinite',
           }}
         >
           {/* Corner brackets */}
@@ -148,7 +161,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -186,7 +199,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -224,7 +237,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -262,7 +275,7 @@ export function CountdownTimer() {
               </span>
               <span
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
@@ -278,10 +291,12 @@ export function CountdownTimer() {
 
         <p
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "'Poppins', sans-serif",
             color: "#636e72",
             fontSize: "18px",
-            opacity: 0.9,
+            opacity: isVisible ? 0.9 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+            transition: 'all 0.8s ease-out 0.4s',
           }}
         >
           We can't wait to celebrate with you 🎊

@@ -1,19 +1,31 @@
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
 export function InvitationCard() {
   const handleDownload = () => {
     alert("Invitation download feature — connect to Supabase to enable PDF generation!");
   };
 
+  const { ref, isVisible } = useScrollAnimation(0.2);
+
   return (
     <section
       id="invitation"
+      ref={ref}
       className="py-20 px-4"
       style={{ background: "#f8f9fa" }}
     >
       {/* Section header */}
-      <div className="text-center mb-12">
+      <div 
+        className="text-center mb-12"
+        style={{
+          opacity: isVisible ? 1 : 0,
+          transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+          transition: 'all 0.8s ease-out',
+        }}
+      >
         <h2
           style={{
-            fontFamily: "'Poppins', sans-serif",
+            fontFamily: "'Playfair Display', serif",
             color: "#e94560",
             fontSize: "clamp(32px, 5vw, 48px)",
             fontWeight: 700,
@@ -23,7 +35,7 @@ export function InvitationCard() {
         </h2>
         <p
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "'Poppins', sans-serif",
             color: "#636e72",
             fontSize: "15px",
             marginTop: 6,
@@ -34,9 +46,16 @@ export function InvitationCard() {
       </div>
 
       {/* Card */}
-      <div className="max-w-[820px] mx-auto">
+      <div 
+        className="max-w-[820px] mx-auto"
+        style={{
+          opacity: isVisible ? 1 : 0,
+          transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
+          transition: 'all 0.8s ease-out 0.2s',
+        }}
+      >
         <div
-          className="relative w-full rounded-2xl overflow-hidden flex flex-col items-center py-12 px-6 md:px-16 gap-5"
+          className="relative w-full rounded-2xl overflow-hidden flex flex-col items-center py-12 px-6 md:px-16 gap-5 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
           style={{
             background: "#ffffff",
             border: "4px solid #e94560",
@@ -73,7 +92,7 @@ export function InvitationCard() {
                 🕉
               </text>
             </svg>
-            <span style={{ fontFamily: "'Inter', sans-serif", color: "#ff6b88", fontSize: "11px", letterSpacing: "0.2em" }}>
+            <span style={{ fontFamily: "'Poppins', sans-serif", color: "#ff6b88", fontSize: "11px", letterSpacing: "0.2em" }}>
               शुभम् करोति
             </span>
           </div>
@@ -90,7 +109,7 @@ export function InvitationCard() {
           {/* शुभ विवाह */}
           <p
             style={{
-              fontFamily: "'Poppins', sans-serif",
+              fontFamily: "'Playfair Display', serif",
               color: "#e94560",
               fontSize: "26px",
               fontWeight: 600,
@@ -104,7 +123,7 @@ export function InvitationCard() {
           <div className="text-center">
             <h2
               style={{
-                fontFamily: "'Poppins', sans-serif",
+                fontFamily: "'Playfair Display', serif",
                 color: "#2d3436",
                 fontSize: "clamp(32px, 6vw, 52px)",
                 fontWeight: 600,
@@ -115,10 +134,10 @@ export function InvitationCard() {
             </h2>
             <p
               style={{
-                fontFamily: "'Poppins', sans-serif",
+                fontFamily: "'Great Vibes', cursive",
                 color: "#e94560",
                 fontSize: "clamp(28px, 5vw, 44px)",
-                fontWeight: 500,
+                fontWeight: 400,
                 margin: "12px 0",
               }}
             >
@@ -126,7 +145,7 @@ export function InvitationCard() {
             </p>
             <h2
               style={{
-                fontFamily: "'Poppins', sans-serif",
+                fontFamily: "'Playfair Display', serif",
                 color: "#2d3436",
                 fontSize: "clamp(32px, 6vw, 52px)",
                 fontWeight: 600,
@@ -149,7 +168,7 @@ export function InvitationCard() {
           <div className="text-center">
             <p
               style={{
-                fontFamily: "'Poppins', sans-serif",
+                fontFamily: "'Playfair Display', serif",
                 color: "#2d3436",
                 fontSize: "20px",
                 fontWeight: 500,
@@ -158,26 +177,26 @@ export function InvitationCard() {
                 display: "inline-block",
               }}
             >
-              Monday, 20th April 2026
+              Sunday, 20th April 2026
             </p>
           </div>
 
           {/* Venue */}
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#636e72",
               fontSize: "15px",
               textAlign: "center",
             }}
           >
-            Sanskar Garden, Panna Road Pateri Chauraha, Satna, Madhya Pradesh 485001
+            Sanskar Garden, Panna Road Pateri Chauraha, Pateri, Madhya Pradesh 485001
           </p>
 
           {/* Hosted by */}
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Poppins', sans-serif",
               color: "#b2bec3",
               fontSize: "13px",
               textAlign: "center",
