@@ -62,7 +62,7 @@ export function Footer() {
 
       {/* Copyright */}
       <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(255,255,255,0.3)", fontSize: "12px", letterSpacing: "0.05em" }}>
-        Made by ujju for your ❤️ special day · © 2026 Roshni & Deepak
+        Made by ujju for your ❤️ special day· <br />Roshni & Deepak
       </p>
     </footer>
   );
