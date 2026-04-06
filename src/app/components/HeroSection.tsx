@@ -97,7 +97,7 @@ export function HeroSection() {
           
           {/* We're Getting Married - Top Heading */}
           <h1
-            className="text-2xl sm:text-3xl md:text-4xl"
+            className="text-2xl sm:text-3xl md:text-4xl px-4"
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#e94560",
@@ -105,6 +105,7 @@ export function HeroSection() {
               letterSpacing: "0.05em",
               animation: isLoaded ? 'heroFadeIn 0.8s ease-out 0.2s both' : 'none',
               textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              textAlign: 'center',
             }}
           >
             We're Getting Married
@@ -125,14 +126,14 @@ export function HeroSection() {
           </div>
 
           {/* Names */}
-          <div className="flex flex-wrap items-center justify-center gap-3 text-center">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-center px-4">
             <h1
               style={{
                 fontFamily: "'Playfair Display', serif",
                 color: "#2d3436",
-                fontSize: "clamp(32px, 8vw, 58px)",
+                fontSize: "clamp(28px, 7vw, 58px)",
                 fontWeight: 700,
-                lineHeight: 1.1,
+                lineHeight: 1.2,
                 animation: isLoaded ? 'heroFadeIn 0.8s ease-out 0.6s both' : 'none',
                 textShadow: '0 2px 8px rgba(0,0,0,0.08)',
               }}
@@ -143,9 +144,9 @@ export function HeroSection() {
               style={{
                 fontFamily: "'Great Vibes', cursive",
                 color: "#e94560",
-                fontSize: "clamp(28px, 6vw, 48px)",
+                fontSize: "clamp(24px, 5vw, 48px)",
                 fontWeight: 400,
-                lineHeight: 1,
+                lineHeight: 1.2,
                 animation: isLoaded ? 'heroFadeIn 0.8s ease-out 0.8s both' : 'none',
               }}
             >
@@ -155,9 +156,9 @@ export function HeroSection() {
               style={{
                 fontFamily: "'Playfair Display', serif",
                 color: "#2d3436",
-                fontSize: "clamp(32px, 8vw, 58px)",
+                fontSize: "clamp(28px, 7vw, 58px)",
                 fontWeight: 700,
-                lineHeight: 1.1,
+                lineHeight: 1.2,
                 animation: isLoaded ? 'heroFadeIn 0.8s ease-out 1s both' : 'none',
                 textShadow: '0 2px 8px rgba(0,0,0,0.08)',
               }}
@@ -168,17 +169,17 @@ export function HeroSection() {
 
           {/* Photo - Positioned after names */}
           <div 
-            className="relative flex items-center justify-center w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] my-4"
+            className="relative flex items-center justify-center w-full max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] my-3 sm:my-4"
             style={{
               animation: isLoaded ? 'imageZoomIn 1s ease-out 1.2s both' : 'none',
             }}
           >
             <div
-              className="relative w-full rounded-3xl overflow-hidden"
+              className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden"
               style={{
                 aspectRatio: "4/5",
-                border: "4px solid #e94560",
-                boxShadow: "0 20px 60px rgba(233,69,96,0.25), 0 0 0 8px rgba(233,69,96,0.1)",
+                border: "3px solid #e94560",
+                boxShadow: "0 15px 50px rgba(233,69,96,0.25), 0 0 0 6px rgba(233,69,96,0.1)",
               }}
             >
               <ImageWithFallback
@@ -187,10 +188,10 @@ export function HeroSection() {
                 className="w-full h-full object-cover object-center"
               />
               {/* Decorative corner accents */}
-              <div className="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-white opacity-60" />
-              <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-white opacity-60" />
-              <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-white opacity-60" />
-              <div className="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-white opacity-60" />
+              <div className="absolute top-2 left-2 sm:top-3 sm:left-3 w-6 h-6 sm:w-8 sm:h-8 border-t-2 border-l-2 border-white opacity-60" />
+              <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-6 h-6 sm:w-8 sm:h-8 border-t-2 border-r-2 border-white opacity-60" />
+              <div className="absolute bottom-2 left-2 sm:bottom-3 sm:left-3 w-6 h-6 sm:w-8 sm:h-8 border-b-2 border-l-2 border-white opacity-60" />
+              <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 w-6 h-6 sm:w-8 sm:h-8 border-b-2 border-r-2 border-white opacity-60" />
             </div>
           </div>
 
@@ -213,23 +214,25 @@ export function HeroSection() {
 
           {/* Date info */}
           <p
-            className="text-2xl sm:text-3xl md:text-4xl"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl px-4"
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#e94560",
               fontWeight: 700,
-              letterSpacing: "0.1em",
+              letterSpacing: "0.08em",
               animation: isLoaded ? 'heroFadeIn 0.8s ease-out 1.6s both' : 'none',
+              textAlign: 'center',
             }}
           >
             20 April 2026
           </p>
           <p 
-            className="text-sm sm:text-base text-center max-w-md" 
+            className="text-xs sm:text-sm md:text-base text-center max-w-md px-4" 
             style={{ 
               fontFamily: "'Poppins', sans-serif", 
               color: "#636e72",
               animation: isLoaded ? 'heroFadeIn 0.8s ease-out 1.8s both' : 'none',
+              lineHeight: '1.6',
             }}
           >
             Sanskar Garden, Panna Road Pateri Chauraha, Pateri
@@ -237,14 +240,14 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div 
-            className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center mt-4 w-full max-w-md"
+            className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center mt-4 w-full max-w-md px-4"
             style={{
               animation: isLoaded ? 'heroFadeIn 0.8s ease-out 2s both' : 'none',
             }}
           >
             <button
               onClick={() => document.querySelector("#story")?.scrollIntoView({ behavior: "smooth" })}
-              className="px-8 py-3 text-sm tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-lg w-full sm:w-auto"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 text-xs sm:text-sm tracking-wider transition-all duration-300 active:scale-95 w-full sm:w-auto"
               style={{
                 fontFamily: "'Poppins', sans-serif",
                 background: "#e94560",
@@ -259,7 +262,7 @@ export function HeroSection() {
             </button>
             <button
               onClick={() => document.querySelector("#events")?.scrollIntoView({ behavior: "smooth" })}
-              className="px-8 py-3 text-sm tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-lg w-full sm:w-auto"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 text-xs sm:text-sm tracking-wider transition-all duration-300 active:scale-95 w-full sm:w-auto"
               style={{
                 fontFamily: "'Poppins', sans-serif",
                 background: "transparent",

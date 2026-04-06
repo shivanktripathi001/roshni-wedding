@@ -48,8 +48,20 @@ export function CountdownTimer() {
         className="relative py-20 px-4 overflow-hidden"
         style={{ background: "#f8f9fa" }}
       >
-        <div className="relative z-10 flex flex-col items-center gap-8 text-center">
-          <div>Loading...</div>
+        <div className="relative z-10 flex flex-col items-center gap-8 text-center px-4">
+          <h2
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              color: "#2d3436",
+              fontSize: "clamp(28px, 6vw, 52px)",
+              fontWeight: 700,
+            }}
+          >
+            The Big Day Is Almost Here!
+          </h2>
+          <p style={{ fontFamily: "'Poppins', sans-serif", color: "#e94560", fontSize: "clamp(13px, 3.5vw, 15px)", marginTop: 6 }}>
+            20 April 2026 — Pateri, MP
+          </p>
         </div>
       </section>
     );
@@ -89,11 +101,11 @@ export function CountdownTimer() {
         })}
       </svg>
 
-      <div className="relative z-10 flex flex-col items-center gap-8 text-center">
+      <div className="relative z-10 flex flex-col items-center gap-6 sm:gap-8 text-center px-4">
         <div
           style={{
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+            opacity: isVisible ? 1 : 0.3,
+            transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'all 0.8s ease-out',
           }}
         >
@@ -101,28 +113,28 @@ export function CountdownTimer() {
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#2d3436",
-              fontSize: "clamp(32px, 5vw, 52px)",
+              fontSize: "clamp(28px, 6vw, 52px)",
               fontWeight: 700,
             }}
           >
             {time.passed ? "The Big Day Has Arrived! 🎊" : "The Big Day Is Almost Here!"}
           </h2>
-          <p style={{ fontFamily: "'Poppins', sans-serif", color: "#e94560", fontSize: "15px", marginTop: 6 }}>
+          <p style={{ fontFamily: "'Poppins', sans-serif", color: "#e94560", fontSize: "clamp(13px, 3.5vw, 15px)", marginTop: 6 }}>
             20 April 2026 — Pateri, MP
           </p>
         </div>
 
         {/* Single Timer Box */}
         <div
-          className="relative px-8 sm:px-12 py-8 sm:py-10 rounded-2xl"
+          className="relative px-4 sm:px-8 md:px-12 py-6 sm:py-8 md:py-10 rounded-xl sm:rounded-2xl"
           style={{
-            border: "3px solid #e94560",
+            border: "2px solid #e94560",
             background: "#ffffff",
-            boxShadow: "0 8px 32px rgba(233,69,96,0.15)",
+            boxShadow: "0 6px 24px rgba(233,69,96,0.15)",
             maxWidth: "600px",
             width: "100%",
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? 'scale(1)' : 'scale(0.95)',
+            opacity: isVisible ? 1 : 0.3,
+            transform: isVisible ? 'scale(1)' : 'scale(0.98)',
             transition: 'all 0.8s ease-out 0.2s',
             animation: 'pulse 3s ease-in-out infinite',
           }}
@@ -145,14 +157,14 @@ export function CountdownTimer() {
             </svg>
           ))}
 
-          <div className="flex justify-center items-center gap-4 sm:gap-6">
+          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-6">
             {/* Days */}
             <div className="flex flex-col items-center">
               <span
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
-                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontSize: "clamp(32px, 7vw, 56px)",
                   fontWeight: 700,
                   lineHeight: 1,
                 }}
@@ -163,7 +175,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
-                  fontSize: "11px",
+                  fontSize: "clamp(9px, 2.5vw, 11px)",
                   letterSpacing: "0.2em",
                   marginTop: 4,
                   textTransform: "uppercase",
@@ -177,7 +189,7 @@ export function CountdownTimer() {
               style={{
                 fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
-                fontSize: "clamp(32px, 6vw, 48px)",
+                fontSize: "clamp(24px, 5vw, 48px)",
                 fontWeight: 300,
               }}
             >
@@ -190,7 +202,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
-                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontSize: "clamp(32px, 7vw, 56px)",
                   fontWeight: 700,
                   lineHeight: 1,
                 }}
@@ -201,7 +213,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
-                  fontSize: "11px",
+                  fontSize: "clamp(9px, 2.5vw, 11px)",
                   letterSpacing: "0.2em",
                   marginTop: 4,
                   textTransform: "uppercase",
@@ -215,7 +227,7 @@ export function CountdownTimer() {
               style={{
                 fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
-                fontSize: "clamp(32px, 6vw, 48px)",
+                fontSize: "clamp(24px, 5vw, 48px)",
                 fontWeight: 300,
               }}
             >
@@ -228,7 +240,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
-                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontSize: "clamp(32px, 7vw, 56px)",
                   fontWeight: 700,
                   lineHeight: 1,
                 }}
@@ -239,7 +251,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
-                  fontSize: "11px",
+                  fontSize: "clamp(9px, 2.5vw, 11px)",
                   letterSpacing: "0.2em",
                   marginTop: 4,
                   textTransform: "uppercase",
@@ -253,7 +265,7 @@ export function CountdownTimer() {
               style={{
                 fontFamily: "'Poppins', sans-serif",
                 color: "#e94560",
-                fontSize: "clamp(32px, 6vw, 48px)",
+                fontSize: "clamp(24px, 5vw, 48px)",
                 fontWeight: 300,
               }}
             >
@@ -266,7 +278,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#e94560",
-                  fontSize: "clamp(40px, 8vw, 56px)",
+                  fontSize: "clamp(32px, 7vw, 56px)",
                   fontWeight: 700,
                   lineHeight: 1,
                 }}
@@ -277,7 +289,7 @@ export function CountdownTimer() {
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   color: "#636e72",
-                  fontSize: "11px",
+                  fontSize: "clamp(9px, 2.5vw, 11px)",
                   letterSpacing: "0.2em",
                   marginTop: 4,
                   textTransform: "uppercase",
@@ -293,10 +305,11 @@ export function CountdownTimer() {
           style={{
             fontFamily: "'Poppins', sans-serif",
             color: "#636e72",
-            fontSize: "18px",
-            opacity: isVisible ? 0.9 : 0,
-            transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+            fontSize: "clamp(14px, 3.5vw, 18px)",
+            opacity: isVisible ? 0.9 : 0.3,
+            transform: isVisible ? 'translateY(0)' : 'translateY(15px)',
             transition: 'all 0.8s ease-out 0.4s',
+            lineHeight: '1.6',
           }}
         >
           We can't wait to celebrate with you 🎊
